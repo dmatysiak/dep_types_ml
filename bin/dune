@@ -1,0 +1,6 @@
+(executable
+ (public_name dep_types_ml)
+ (name main)
+ (libraries Dep_types)
+ ;;(preprocess (pps ppx_deriving.ppx show_deriving.ord))
+ )

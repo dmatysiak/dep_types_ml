@@ -1,0 +1,10 @@
+(tests
+ (names
+  Test_church
+  Test_env
+  Test_eval
+  Test_lib
+  Test_readback
+  Test_run
+  Test_typechecker)
+ (libraries Dep_types ounit2))
