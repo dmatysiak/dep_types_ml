@@ -12,4 +12,6 @@
 (package
  (name dep_types_ml)
  (synopsis "An OCaml implementation of David Christiansen's tutorial")
- (depends ocaml dune))
+ (depends ocaml
+          ounit2
+          dune))

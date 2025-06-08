@@ -42,6 +42,19 @@ and print_val v =
   | VNeutral (t, neu) -> format_term "VNeutral" [ print_ty t; print_neutral neu ]
   | VZero -> "VZero"
   | VAdd1 v -> format_term "VAdd1" [ print_val v ]
+  | VPi (_, _) -> _
+  | VLambda _ -> _
+  | VSigma (_, _) -> _
+  | VPair (_, _) -> _
+  | VNat -> _
+  | VEq (_, _, _) -> _
+  | VSame -> _
+  | VTrivial -> _
+  | VSole -> _
+  | VAbsurd -> _
+  | VAtom -> _
+  | VTick _ -> _
+  | VUniverse -> _
 
 and print_expr e =
   match e with
@@ -53,6 +66,24 @@ and print_expr e =
   | Rec (t, e0, e1, e2) ->
     format_term "Rec" [ print_ty t; print_expr e0; print_expr e1; print_expr e2 ]
   | Ann (expr, t) -> format_term "Ann" [ print_expr expr; print_ty t ]
+  | Pi (_, _, _) -> _
+  | Sigma (_, _, _) -> _
+  | Cons (_, _) -> _
+  | Car _ -> _
+  | Cdr _ -> _
+  | Nat -> _
+  | IndNat (_, _, _, _) -> _
+  | Equal (_, _, _) -> _
+  | Same -> _
+  | Replace (_, _, _) -> _
+  | Trivial -> _
+  | Sole -> _
+  | Absurd -> _
+  | IndAbsurd (_, _) -> _
+  | Atom -> _
+  | Tick _ -> _
+  | Universe -> _
+  | The (_, _) -> _
 
 and print_normal n =
   match n with
