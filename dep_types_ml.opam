@@ -6,6 +6,7 @@ homepage: "https://github.com/dmatysiak/dep_types_ml"
 bug-reports: "https://github.com/dmatysiak/dep_types_ml/issues"
 depends: [
   "ocaml"
+  "ounit2"
   "dune" {>= "3.15"}
   "odoc" {with-doc}
 ]
